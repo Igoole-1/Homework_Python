@@ -10,11 +10,17 @@ for i in range(n):
     money.append(user_money)
 print(money)
 
-count=0
+countOne=0
+countTwo=0
 for i in range(n):
     if (money[i]==0):
-        count+=1
-    # else:
-    #     count=count
-    #     i+=1
-print(count)
+        countOne+=1
+    else:
+        countTwo+=1
+    #     # i+=1
+print(countOne)
+print(countTwo)
+if countOne<countTwo:
+    print (countOne)
+else:
+    print(countTwo)
